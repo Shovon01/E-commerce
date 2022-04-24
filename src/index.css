@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* header component start */
+.header img {
+  height: 80px;
+}
+.header {
+  text-align: center;
+}
+.header nav {
+  background-color: black;
+  line-height: 40px;
+  font-size: 20px;
+}
+.header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  padding: 5px;
+}
+.header nav a:hover {
+  background-color: gray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* header component end */
+/* Shop component start */
+.shopContainer {
+  display: flex;
 }
+.productContainer {
+  width: 70%;
+  margin-left: 20px;
+  margin-right: 5px;
+  border-right: 1px solid lightgray;
+}
+/* Shop component end */
+/* Product component start */
+.product {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.productName {
+  color: blue;
+  font-weight: 400;
+}
+.productbtn {
+  background-color: goldenrod;
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Product component end */
