@@ -1,10 +1,16 @@
 import React from "react";
+import "../../index.css";
+import "../../App.css";
+import { Link } from "react-router-dom";
 
 const Cart = (props) => {
   const cart = props.cart;
-  console.log(cart);
+  // console.log(cart);
 
-  const totalPrice = cart.reduce((total, prd) => total + prd.price, 0);
+  const totalPrice = cart.reduce(
+    (total, prd) => total + prd.price * prd.quantity,
+    0
+  );
   // let total = 0;
   // for (let i = 0; i < cart.length; i++) {
   //   const product = cart[i];
@@ -27,7 +33,7 @@ const Cart = (props) => {
     return Number(precision);
   };
   return (
-    <div>
+    <div className="cart">
       <h4 className="text-primary">Order Summary</h4>
 
       <p>Item Ordered:{cart.length}</p>
@@ -39,6 +45,8 @@ const Cart = (props) => {
         <small>Tax + VAT: {formatNumber(tax)}</small>
       </p>
       <p>Total Price: {formatNumber(grandTotal)}</p>
+      <br />
+      {props.children}
     </div>
   );
 };

@@ -9,6 +9,7 @@
   background-color: black;
   line-height: 40px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .header nav a {
   text-decoration: none;
@@ -39,6 +40,7 @@
   margin-bottom: 5px;
   margin-bottom: 10px;
   padding-bottom: 5px;
+  font-size: 12px;
 }
 .productName {
   color: blue;
@@ -51,6 +53,9 @@
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+.cart {
+  font-size: 12px;
 }
 
 /* Product component end */
