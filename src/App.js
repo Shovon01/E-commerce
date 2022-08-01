@@ -15,19 +15,15 @@ function App() {
   return (
     <div>
       <Header />
-   
-        <Routes>
-          <Route path="/shop" element={<Shop />}></Route>
-          <Route path="/review" element={<Review />}></Route>
-          <Route path="/inventory" element={<Inventory />}></Route>
-          <Route exact path="/" element={<Shop />}></Route>
-          <Route
-            path="/product/:productKey"
-            element={<ProductDetails />}
-          ></Route>
-          {/* <Route path="*" element={<NotFound />}></Route> */}
-        </Routes>
-   
+
+      <Routes>
+        <Route path="/shop" element={<Shop />}></Route>
+        <Route path="/review" element={<Review />}></Route>
+        <Route path="/inventory" element={<Inventory />}></Route>
+        <Route exact path="/" element={<Shop />}></Route>
+        <Route path="/product/:productKey" element={<ProductDetails />}></Route>
+        {/* <Route path="*" element={<NotFound />}></Route> */}
+      </Routes>
     </div>
   );
 }
